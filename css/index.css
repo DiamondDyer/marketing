@@ -175,7 +175,7 @@ img {
 .rightContainer .links nav {
   font-size: 2rem;
   width: auto;
-  padding-bottom: 5%;
+  padding-bottom: 0%;
   display: flex;
   text-align: right;
 }
@@ -190,11 +190,12 @@ img {
   white-space: nowrap;
   text-align: left;
   text-decoration: none;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
   margin-right: 2rem;
   padding: 2%;
   padding-left: 0;
   color: white;
+  font-weight: 700;
 }
 @media ( max-width: 800px ) {
   .rightContainer .links nav a {
@@ -367,6 +368,7 @@ body .mainContainer .rightContainer {
 }
 body .mainContainer .rightContainer p {
   font-size: 2rem;
+  font-weight: 100;
 }
 @media ( max-width: 500px ) {
   body .mainContainer .rightContainer p {
@@ -375,7 +377,9 @@ body .mainContainer .rightContainer p {
 }
 body .mainContainer .rightContainer h1 {
   margin-bottom: 5%;
+  margin-top: 10%;
   line-height: 90px;
+  font-weight: 700;
 }
 @media ( max-width: 1000px ) {
   body .mainContainer .rightContainer h1 {
@@ -418,8 +422,54 @@ body .mainContainer .rightContainer .btnParent .btn {
   text-decoration: none;
   margin-right: 2%;
 }
+@media ( max-width: 1000px ) {
+  body .mainContainer .rightContainer .btnParent .btn {
+    display: block;
+    background-color: #1DB954;
+    padding: 1.3%;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 3px;
+    color: black;
+    text-decoration: none;
+  }
+}
+@media ( max-width: 800px ) {
+  body .mainContainer .rightContainer .btnParent .btn {
+    display: block;
+    background-color: #1DB954;
+    padding: 1.6%;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 3px;
+    color: black;
+    text-decoration: none;
+  }
+}
+@media ( max-width: 500px ) {
+  body .mainContainer .rightContainer .btnParent .btn {
+    display: block;
+    background-color: #1DB954;
+    padding: 2.3%;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 3px;
+    color: black;
+    text-decoration: none;
+  }
+}
 body .mainContainer .rightContainer .btnParent .btn a {
   text-decoration: none;
+  font-weight: 700;
   color: black;
 }
 .formParent {
@@ -429,7 +479,7 @@ body .mainContainer .rightContainer .btnParent .btn a {
 }
 form {
   width: 80%;
-  margin-top: 2%;
+  margin-top: 8%;
 }
 @media ( max-width: 1000px ) {
   form {
@@ -440,6 +490,7 @@ form {
 @media ( max-width: 500px ) {
   form {
     padding-bottom: 28%;
+    width: 70%;
   }
 }
 label {
@@ -491,4 +542,71 @@ input[type=submit] {
   border-radius: 3px;
   color: black;
   text-decoration: none;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+@media ( max-width: 500px ) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery .picText {
+  text-align: center;
+}
+.gallery .picText .name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.gallery .picText .name mark {
+  padding: 2px;
+}
+.gallery .picText .job {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.gallery img {
+  width: 48%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 4%;
+  filter: gray;
+  /* IE5+ */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Chrome Canary */
+}
+@media ( max-width: 500px ) {
+  .gallery img {
+    width: 60%;
+  }
+}
+.gallery img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+.aboutText {
+  margin-bottom: 5% ;
+  margin-top: 5%;
+}
+@media ( max-width: 500px ) {
+  .aboutText {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+@media ( max-width: 800px ) {
+  .aboutText {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
+@media ( max-width: 1000px ) {
+  .aboutText {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
+.aboutText h2 {
+  font-size: 5rem;
 }
